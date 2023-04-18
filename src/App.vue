@@ -16,6 +16,7 @@ import sectionCallinaction from './components/section-callinaction.vue';
 import globalTable from './components/global/global-table.vue';
 import globalModal from './components/global/global-modal.vue';
 import sectionExperience from './components/section-experience.vue';
+import sectionFormSubmiter from './components/section-form-submiter.vue';
 
 import { def } from '@vue/shared';
 
@@ -57,7 +58,7 @@ import experience from "./exp.lib";
           <div class="col-lg-8 text-center mx-auto my-auto">
             <h1 class="text-white main-tagline">{{profile.tagline}}</h1>
             <p class="lead mb-4 text-white opacity-8">{{profile.description}}</p>
-            <button type="submit" class="btn bg-white text-dark ">Dapatkan Penawaranmu Sekarang</button>
+            <button type="submit" class="btn bg-white text-dark" data-toggle="modal" data-target="#form-submit">Dapatkan Penawaranmu Sekarang</button>
             <h6 class="text-white text-center mb-2 mt-5">Find us on</h6>
             <social
               :socials="profile.socials"
@@ -69,6 +70,14 @@ import experience from "./exp.lib";
       </div>
       <waveAnimated/>
     </div>
+    <global-modal id="form-submit" class="" style="max-width: 600px;">
+      <div class="modal-body">
+        <sectionFormSubmiter></sectionFormSubmiter>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </global-modal>
   </header>
   <!-- -------- END HEADER 7 w/ text and video ------- -->
 

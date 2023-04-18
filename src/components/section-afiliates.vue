@@ -10,7 +10,7 @@
         <h1 class="text-primary text-center">Menjadi Konsultan Terkemuka dan Dipercaya</h1>
         <div class="row p-3">
             <div class="col-lg-12">
-                <carousel items-to-scroll="1" items-to-show="3  " class="pt-4">
+                <carousel items-to-scroll="1" items-to-show="4  " class="pt-4">
                     <slide
                         v-for="(afiliate, key) in afiliates"
                         :key="key"
@@ -42,6 +42,46 @@
         data: function(){
             return {
                 afiliates:[
+                    {
+                        name:"Titanium",
+                        url:"../assets/img/client/titanium.png"
+                    },
+                    {
+                        name:"KFC",
+                        url:"../assets/img/client/KFC.png"
+                    },
+                    {
+                        name:"FIESTA",
+                        url:"../assets/img/client/fiesta.png"
+                    },
+                    {
+                        name:"Bale Hinggil",
+                        url:"../assets/img/client/Balehinggil.png"
+                    },
+                    {
+                        name:"PAKUWON",
+                        url:"../assets/img/client/pakuwon.png"
+                    },
+                    {
+                        name:"Depo Bangunan",
+                        url:"../assets/img/client/depo bangunan.png"
+                    },
+                    {
+                        name:"High Point",
+                        url:"../assets/img/client/high point.png"
+                    },
+                    {
+                        name:"kosme pack",
+                        url:"../assets/img/client/kosme pack.png"
+                    },
+                    {
+                        name:"kharisma",
+                        url:"../assets/img/client/kharisma.png"
+                    },
+                    {
+                        name:"Agung",
+                        url:"../assets/img/client/Agung.png"
+                    },
                     {
                         name:"Agrico",
                         url:"../assets/img/client/AGRICO INTERNATIONAL.png"
