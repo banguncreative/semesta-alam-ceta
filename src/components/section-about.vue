@@ -14,7 +14,7 @@
                     <h3 class="text-gradient text-primary mb-1 mt-2">Tentang Kami</h3>
                     <!-- <h3>The most important</h3> -->
                     <p>
-                        <b>{{ name }}</b> didirikan pada tahun <code>{{ founded }}</code>, dan genap {{ experience() }} tahun pengalaman kami.<br/><br/>
+                        <b>{{ name }}</b> didirikan pada tahun <b class="text-primary">{{ founded }}</b>, dan genap {{ experience() }} tahun pengalaman kami.<br/><br/>
                         Melalui visi kami <b>{{ vision }}</b> kami terus mencoba mengabdi dalam upaya penyelenggaraan lingkungan.
                     </p>
                     <!-- <a href="javascript:;" class="text-primary icon-move-right">More about us

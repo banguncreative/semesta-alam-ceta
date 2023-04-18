@@ -9,7 +9,7 @@
     <section class="container bg-white pt-5" id="afiliates" style="min-height: 300px;">
         <h1 class="text-primary text-center">Menjadi Konsultan Terkemuka dan Dipercaya</h1>
         <div class="row p-3">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <carousel items-to-scroll="1" items-to-show="3  " class="pt-4">
                     <slide
                         v-for="(afiliate, key) in afiliates"
@@ -25,15 +25,14 @@
                     </slide>
                 </carousel>
             </div>
-            <div class="col-lg-3">
+            <!-- <div class="col-lg-3">
                 <hr class="vertical dark">
                 <div class="p-3 text-center">
                     <p class="text-sm">Konsultan Kami Dipercaya Lebih dari</p>
                     <h1 class="text-gradient text-primary"> <span id="state4" :countto="vendors">00</span>+</h1>
                     <h5 class="mt-3">Instansi dan Perusahaan</h5>
-                    <!-- <p class="text-sm">Terdiri atas beragam Instansi dan Perusahaan Swasta</p> -->
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 </template>

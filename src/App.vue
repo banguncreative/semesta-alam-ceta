@@ -61,6 +61,7 @@ import experience from "./exp.lib";
             <h6 class="text-white text-center mb-2 mt-5">Find us on</h6>
             <social
               :socials="profile.socials"
+              class="pb-5"
             >
             </social>
           </div>
