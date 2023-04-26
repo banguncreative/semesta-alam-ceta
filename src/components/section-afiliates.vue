@@ -1,8 +1,7 @@
 <script setup>
     import 'vue3-carousel/dist/carousel.css'
     import globalCards from './global/global-cards.vue';
-    import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
-
+    import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
     import globalFullBg from './global/global-full-bg.vue';
 </script>
 <template>
@@ -10,7 +9,7 @@
         <h1 class="text-primary text-center">Menjadi Konsultan Terkemuka dan Dipercaya</h1>
         <div class="row p-3">
             <div class="col-lg-12">
-                <carousel items-to-scroll="1" items-to-show="4  " class="pt-4">
+                <carousel items-to-scroll="4" items-to-show="5" wrapAround="true" class="pt-4">
                     <slide
                         v-for="(afiliate, key) in afiliates"
                         :key="key"
@@ -23,6 +22,9 @@
                             ></globalFullBg>
                         </div>
                     </slide>
+                    <template #addons>
+                        <Navigation />
+                    </template>
                 </carousel>
             </div>
             <!-- <div class="col-lg-3">

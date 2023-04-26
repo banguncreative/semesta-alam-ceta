@@ -4,7 +4,7 @@
         <div class="row">
         <div class="col-lg-9 z-index-2 border-radius-xl mt-n10 mx-auto py-3 blur shadow-blur">
             <div class="row">
-            <div class="col-md-4 position-relative">
+            <div class="col-md-6 position-relative">
                 <div class="p-3 text-center">
                 <h1 class="text-gradient text-primary"><span id="state1" :countto="documents">00</span>+</h1>
                 <h5 class="mt-3">Documents Served</h5>
@@ -12,15 +12,15 @@
                 </div>
                 <hr class="vertical dark">
             </div>
-            <div class="col-md-4 position-relative">
+            <!-- <div class="col-md-4 position-relative">
                 <div class="p-3 text-center">
                 <h1 class="text-gradient text-primary"> <span id="state2" :countto="vendors">00</span>+</h1>
                 <h5 class="mt-3">Affiliated Client</h5>
                 <p class="text-sm">Terdiri atas beragam Instansi dan Perusahaan Swasta</p>
                 </div>
                 <hr class="vertical dark">
-            </div>
-            <div class="col-md-4">
+            </div> -->
+            <div class="col-md-6">
                 <div class="p-3 text-center">
                 <h1 class="text-gradient text-primary" id="state3" :countto="experience()">0</h1>
                 <h5 class="mt-3">Years Experience</h5>
