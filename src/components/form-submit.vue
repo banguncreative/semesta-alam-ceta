@@ -12,12 +12,12 @@
                 <span class="fs-8">Basic data</span>
 
                 <div class="form-floating input-group-sm mb-2">
-                    <input type="text" id="company_name" v-model="submitData.company_name" class="form-control" name="company_name" placeholder="Nama perusahaan" aria-label="company name" aria-describedby="basic-addon2">
+                    <input type="text" id="company_name" v-model="submitData.company_name" class="form-control" name="company_name" placeholder="Nama perusahaan" aria-label="company name" aria-describedby="basic-addon2" required>
                     <label for="company_name">Nama perusahaan</label>
                 </div>
 
                 <div class="form-floating input-group-sm mb-2">
-                    <input type="email" id="email" v-model="submitData.email" class="form-control" name="email" placeholder="name@example.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input type="email" id="email" v-model="submitData.email" class="form-control" name="email" placeholder="name@example.com" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
                     <label for="email">Email</label>
                 </div>
 
@@ -36,7 +36,7 @@
                 <span>Company data</span>
 
                 <div class="form-floating input-group-sm mb-2">
-                    <input type="text" id="NIB" v-model="submitData.NIB" class="form-control" name="NIB" pattern="[0-9]{13}" maxlength="13" placeholder="x x x x x x x x x x x x x " aria-label="Recipient's username" aria-describedby="NIB">
+                    <input type="text" id="NIB" v-model="submitData.NIB" class="form-control" name="NIB" pattern="[0-9]{13}" maxlength="13" placeholder="x x x x x x x x x x x x x " aria-label="Recipient's username" aria-describedby="NIB" required>
                     <label for="NIB">NIB <span style="font-size: x-small;">(Nomor Izin Berusaha)</span></label>
                 </div>
 
@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="form-floating mb-2">
-                    <select class="form-select" id="status_modal" v-model="submitData.status_modal" aria-label="PMA / PMDN">
+                    <select class="form-select" id="status_modal" v-model="submitData.status_modal" aria-label="PMA / PMDN" required>
                         <option selected>PMA / PMDN</option>
                         <option value="PMA">Perusahan Modal Asing (PMA)</option>
                         <option value="PMDN">Perusahaan Modal Dalam Negeri (PMDN)</option>
@@ -55,17 +55,17 @@
                 </div>
 
                 <div class="form-floating input-group-sm mb-2">
-                    <input type="text" id="lahan" v-model="submitData.luas_lahan" class="form-control" name="luas_lahan" placeholder="< 1000 m2" aria-label="" aria-describedby="lahan">
-                    <label for="lahan">Luas Lahan</label>
+                    <input type="text" id="lahan" v-model="submitData.luas_lahan" class="form-control" name="luas_lahan" placeholder="< 1000 m2" aria-label="" aria-describedby="lahan" required>
+                    <label for="lahan">Luas Lahan (m2)</label>
                 </div>
 
                 <div class="form-floating input-group-sm mb-2">
                     <input type="text" id="bangunan" v-model="submitData.luas_bangunan" class="form-control" name="luas_bangunan" placeholder="< 1000 m2" aria-label="" aria-describedby="bangunan">
-                    <label for="bangunan">Luas Lahan</label>
+                    <label for="bangunan">Luas Bangunan (m2)</label>
                 </div>
 
                 <div class="form-floating input-group-sm mb-2">
-                    <input type="text" id="lokasi" v-model="submitData.lokasi" class="form-control" name="lokasi" placeholder="lokasi/kota" aria-label="" aria-describedby="lokasi">
+                    <input type="text" id="lokasi" v-model="submitData.lokasi" class="form-control" name="lokasi" placeholder="lokasi/kota" aria-label="" aria-describedby="lokasi" required>
                     <label for="lokasi">Lokasi kegiatan</label>
                 </div>
 
@@ -74,7 +74,7 @@
                 <span>Service</span>
 
                 <div class="form-floating mb-2">
-                    <select class="form-select" id="service" v-model="submitData.service" aria-label="Floating label select example">
+                    <select class="form-select" id="service" v-model="submitData.service" aria-label="Floating label select example" required>
                         <option selected>Open this select menu</option>
                         <option 
                             v-for="service in services"
@@ -142,38 +142,6 @@
                 token: "AKfycbwLhF_OsmbVSlUbSpPpczOwhsoQbJRxvEH7X-nVADk5zWfs-RdFamiaWmSi2yoLuJjGkw",
                 engine: null,
                 textStatus: null,
-                services: [
-                    {
-                        name: "Amdal",
-                        img: "../assets/img/service/01.jpeg",
-                        description: "Analisis Mengenai Dampak Lingkungan"
-                    },
-                    {
-                        name: "UKL UPL",
-                        img: "../assets/img/service/02.jpeg",
-                        description: "Upaya Pengelolaan Lingkungan Hidup dan Upaya Pemantauan Lingkungan Hidup"
-                    },
-                    {
-                        name: "PERTEK",
-                        img: "../assets/img/service/03.jpeg",
-                        description: "Dokumen Persetujuan Teknis untuk Limbah Cair dan Limbah Emisi Udara"
-                    },
-                    {
-                        name: "RINTEK",
-                        img: "../assets/img/service/04.jpeg",
-                        description: "Dokumen Rincian Teknis Limbah B3"
-                    },
-                    {
-                        name: "PROPER",
-                        img: "../assets/img/service/05.jpeg",
-                        description: "Public Disclosure Program for Environmental Compliance"
-                    },
-                    {
-                        name: "PEMANTAUAN",
-                        img: "../assets/img/service/06.jpeg",
-                        description: "Dokumen Pemantauan Pelaksanaan Program UKL - UPL Perusahaan"
-                    },
-                ]
             }
         },
         mounted(){
@@ -181,6 +149,7 @@
             this.engine = new submiter(this.token);
         },
         props:{
+            services: Object
         },
         methods:{
             async submit(){

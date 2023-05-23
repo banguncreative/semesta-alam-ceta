@@ -18,6 +18,7 @@ import profile from '../profile';
                             target="_blank"
                             :href="wame(profile.tel, text)"
                             style="text-decoration: none; color:unset"
+                            aria-label="order by WA"
                         >
                             <b style="font-size: 3.5rem; overflow-wrap: break-word;">
                                 {{ chopPhone(profile.tel,3).replace("6 2","62") }}
@@ -48,7 +49,7 @@ import profile from '../profile';
                                     </div>
                                     <h3 class="text-primary">{{ service.name }}</h3>
                                     <p class="text-dark text-sm text-center fw-light lh-sm" style="min-height: 80px">{{ service.description }}</p>
-                                    <a :href="wame(profile.tel, text+` lebih spesifik terkait *${service.name}*`)" target="_blank" class="btn btn-outline-secondary mt-3 btn-round" style="z-index:2000">More info <i class="bi bi-telephone-forward-fill text-sm ms-1"></i></a> 
+                                    <a :href="wame(profile.tel, text+` lebih spesifik terkait *${service.name}*`)" target="_blank" class="btn btn-outline-secondary mt-3 btn-round" style="z-index:2000" :aria-label="'Order '+service.name">More info <i class="bi bi-telephone-forward-fill text-sm ms-1"></i></a> 
                                 </globalCards3d>
                             </div>
                         </div>

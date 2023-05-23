@@ -16,7 +16,7 @@ import sectionCallinaction from './components/section-callinaction.vue';
 import globalTable from './components/global/global-table.vue';
 import globalModal from './components/global/global-modal.vue';
 import sectionExperience from './components/section-experience.vue';
-import sectionFormSubmiter from './components/section-form-submiter.vue';
+import sectionFormSubmiter from './components/form-submit.vue';
 
 import { def } from '@vue/shared';
 
@@ -70,9 +70,9 @@ import experience from "./exp.lib";
       </div>
       <waveAnimated/>
     </div>
-    <global-modal id="form-submit" class="" style="max-width: 600px;">
-      <div class="modal-body">
-        <sectionFormSubmiter></sectionFormSubmiter>
+    <global-modal id="form-submit" modalTitle="Hubungi kami melalui Email" class="" style="max-width: 600px;">
+      <div class="modal-body" >
+        <sectionFormSubmiter :services="profile.service"></sectionFormSubmiter>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -101,7 +101,7 @@ import experience from "./exp.lib";
   <!-- -------- END ABOUT SECTION ------- -->
   
   <!---- experience modal ---->
-  <globalModal id="modalPengalaman">
+  <globalModal id="modalPengalaman" modalTitle="Daftar pengalaman">
     <div class="modal-body">
       <sectionExperience
         v-if="exp_data"

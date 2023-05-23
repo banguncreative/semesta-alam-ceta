@@ -25,17 +25,17 @@
                     <div class="container-fluid p-0">
                         <div class="row">
                             <div class="col-lg-auto">
-                                <a :href="wame(profile.tel, text)" style="text-decoration: none; color:unset;" target="_blank">
+                                <a :href="wame(profile.tel, text)" style="text-decoration: none; color:unset;" target="_blank" aria-label="contact us via whatsapp">
                                     <i class="bi bi-whatsapp"></i> +{{ chopPhone(profile.tel,3) }}
                                 </a>
                             </div>
                             <div class="col-lg-auto">
-                                <a :href="'tel:+'+profile.tel" style="text-decoration: none; color:unset;">
+                                <a :href="'tel:+'+profile.tel" style="text-decoration: none; color:unset;" aria-label="contact us via tell">
                                     <i class="bi bi-telephone-fill"></i> +{{ chopPhone(profile.tel,3) }}
                                 </a>
                             </div>
                             <div class="col-lg-auto">
-                                <a :href="'mailto:'+profile.email" style="text-decoration: none; color:unset;">
+                                <a :href="'mailto:'+profile.email" style="text-decoration: none; color:unset;" aria-label="contact us via mail">
                                     <i class="bi bi-envelope-at"></i> {{ profile.email }}
                                 </a> 
                             </div>
@@ -48,6 +48,7 @@
                     >
                     </social>
                 </globalCards>
+                <p class="text-center text-dark" style="margin: auto; font-size: 12px;"> © {{ new Date().getFullYear() }} SEMESTA ALAM CETA Allrights reserved</p>
             </div>
         </div>
         <div class="container-fluid p-0" style="position: relative;overflow: hidden;">
