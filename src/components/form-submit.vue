@@ -103,8 +103,8 @@
             >
                 <div class="bd-highlight mb-3" style="margin: auto">
                     
-                    <div class="container">
-                        <div class="text-center">OPT already send to <b>{{ submitData.email }}</b></div>
+                    <div class="container m-0 p-0">
+                        <div class="text-center">OTP already send to <b>{{ submitData.email }}</b></div>
                         <div class="row">
                             <div class="col-lg-8 text-center">
                                 <otherOTP
@@ -142,6 +142,38 @@
                 token: "AKfycbwLhF_OsmbVSlUbSpPpczOwhsoQbJRxvEH7X-nVADk5zWfs-RdFamiaWmSi2yoLuJjGkw",
                 engine: null,
                 textStatus: null,
+                services: [
+                    {
+                        name: "Amdal",
+                        img: "../assets/img/service/01.jpeg",
+                        description: "Analisis Mengenai Dampak Lingkungan"
+                    },
+                    {
+                        name: "UKL UPL",
+                        img: "../assets/img/service/02.jpeg",
+                        description: "Upaya Pengelolaan Lingkungan Hidup dan Upaya Pemantauan Lingkungan Hidup"
+                    },
+                    {
+                        name: "PERTEK",
+                        img: "../assets/img/service/03.jpeg",
+                        description: "Dokumen Persetujuan Teknis untuk Limbah Cair dan Limbah Emisi Udara"
+                    },
+                    {
+                        name: "RINTEK",
+                        img: "../assets/img/service/04.jpeg",
+                        description: "Dokumen Rincian Teknis Limbah B3"
+                    },
+                    {
+                        name: "PROPER",
+                        img: "../assets/img/service/05.jpeg",
+                        description: "Public Disclosure Program for Environmental Compliance"
+                    },
+                    {
+                        name: "PEMANTAUAN",
+                        img: "../assets/img/service/06.jpeg",
+                        description: "Dokumen Pemantauan Pelaksanaan Program UKL - UPL Perusahaan"
+                    },
+                ]
             }
         },
         mounted(){
@@ -149,7 +181,6 @@
             this.engine = new submiter(this.token);
         },
         props:{
-            services: Object
         },
         methods:{
             async submit(){

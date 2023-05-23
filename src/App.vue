@@ -72,7 +72,7 @@ import experience from "./exp.lib";
     </div>
     <global-modal id="form-submit" modalTitle="Hubungi kami melalui Email" class="" style="max-width: 600px;">
       <div class="modal-body" >
-        <sectionFormSubmiter :services="profile.service"></sectionFormSubmiter>
+        <sectionFormSubmiter ></sectionFormSubmiter>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
