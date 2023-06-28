@@ -126,7 +126,9 @@ import experience from "./exp.lib";
   ></sectionContentService>
   <!-- ------ END CONTENT SERVICE ------- -->
 
-  <sectionTeams></sectionTeams>
+  <sectionTeams
+    :teams="profile.teams"
+  ></sectionTeams>
 
   <!-- <sectionCallinaction
     :profile="profile"

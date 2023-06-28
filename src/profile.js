@@ -74,5 +74,18 @@ export default {
             img: "../assets/img/service/06.jpeg",
             description: "Dokumen Pemantauan Pelaksanaan Program UKL - UPL Perusahaan"
         },
+    ],
+    teams:[
+        {
+            name: "",
+            position:"Assistant Ahli Lingkungan",
+            img:"../assets/img/potrait_assistant_1.png"
+        },
+        {
+            name: "",
+            position:"Assistant Ahli Lingkungan",
+            img:"../assets/img/potrait_assistant_2.png"
+        },
+        
     ]
 }

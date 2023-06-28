@@ -65,20 +65,10 @@
     export default{
         data: function(){
             return {
-                teams:[
-                    {
-                        name: "",
-                        position:"Assistant Ahli Lingkungan",
-                        img:"../assets/img/potrait_assistant_1.png"
-                    },
-                    {
-                        name: "",
-                        position:"Assistant Ahli Lingkungan",
-                        img:"../assets/img/potrait_assistant_2.png"
-                    },
-                    
-                ]
             }
+        },
+        props:{
+            teams: Object
         }
     }
 </script>
